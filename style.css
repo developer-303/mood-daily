@@ -1,0 +1,88 @@
+:root {
+  --bg-color: #e8f6f3;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --button-bg: #007BFF;
+  --button-hover: #0056b3;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header #toggleDarkMode {
+  background: var(--button-bg);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+header #toggleDarkMode:hover {
+  background: var(--button-hover);
+}
+
+.mood-entry,
+.visualization,
+.affirmation {
+  background: var(--card-bg);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea,
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  background: var(--button-bg);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+/* Dark Mode */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --card-bg: #1e1e1e;
+  --button-bg: #BB86FC;
+  --button-hover: #9f6bdb;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777;
+}
